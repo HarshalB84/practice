@@ -2,7 +2,6 @@ package com.practice.prod_ready_feature.demo.controller;
 
 import com.practice.prod_ready_feature.demo.dto.PostDTO;
 import com.practice.prod_ready_feature.demo.services.PostService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,9 +19,20 @@ public class PostController {
         return postService.getAllPosts();
     }
 
+    @GetMapping("/{postId}")
+    public PostDTO getPostById(@PathVariable Long postId){
+        return postService.getPostById(postId);
+    }
+
     @PostMapping
     public PostDTO createNewPost(@RequestBody PostDTO inputPost){
         return postService.createNewPost(inputPost);
     }
+
+    @PutMapping("/{postId}")
+    public PostDTO updatePost(@RequestBody PostDTO inputPost, @PathVariable Long postId){
+        return postService.updatePost(inputPost, postId);
+    }
+
 
 }
