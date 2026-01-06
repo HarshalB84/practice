@@ -68,6 +68,11 @@
 			<artifactId>modelmapper</artifactId>
 			<version>3.2.6</version>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-envers</artifactId>
+			<version>7.2.0.Final</version>
+		</dependency>
 	</dependencies>
 
 	<build>
