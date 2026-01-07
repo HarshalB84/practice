@@ -4,7 +4,6 @@ import com.practice.prod_ready_feature.demo.dto.PostDTO;
 import com.practice.prod_ready_feature.demo.entity.PostEntity;
 import com.practice.prod_ready_feature.demo.exception.ResourceNotFoundException;
 import com.practice.prod_ready_feature.demo.repositories.PostRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
